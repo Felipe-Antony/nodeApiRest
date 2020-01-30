@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 //rotas
 require('./controllers/authController')(app);
+require('./controllers/projectController')(app);
 
 //porta
 app.listen(5000);

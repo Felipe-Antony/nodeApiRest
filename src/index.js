@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 //rotas
-require('./App/controllers/index');
+require('./App/controllers/index')(app);
 
 //porta
-app.listen(3000);
+app.listen(5050);

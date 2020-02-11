@@ -10,8 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 //rotas
-require('./controllers/authController')(app);
-require('./controllers/projectController')(app);
+require('./App/controllers/index');
 
 //porta
-app.listen(5000);
+app.listen(3000);
